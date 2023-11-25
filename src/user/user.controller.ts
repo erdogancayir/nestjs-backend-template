@@ -1,4 +1,4 @@
-import { Body, Controller, HttpCode, HttpStatus, Param, Post, Req, UseGuards } from "@nestjs/common";
+import { Body, Controller, HttpCode, HttpStatus, Param, Post, Put, Req, UseGuards } from "@nestjs/common";
 import { UserService } from "./user.service";
 import { ApiOkResponse, ApiOperation, ApiTags } from '@nestjs/swagger';
 import { RolesGuard } from "src/auth/guards/roles.guard";
@@ -7,6 +7,8 @@ import { VerifyUuidDto } from "./dto/verify-uuid.dto";
 import { LoginUserDto } from "./dto/login-user.dto";
 import { Roles } from './../auth/decorators/roles.decorator';
 import { AddAddressDto } from "./dto/add-address.dto";
+import { UpdateProfileDto } from "./dto/update-profile.dto";
+import { User } from "./interfaces/user.interface";
 
 /* 
 Swagger dokümantasyonunda ilgili controller altındaki tüm route'ları (yolları) bu etiket altında gruplamak için kullanılır
@@ -45,5 +47,10 @@ export class UserController {
     @Post(':userId/address')
     async addAddress(@Param('userId') userId: string, @Body() addAddressDto: AddAddressDto) {
         return await this.userService.addAddress(userId, addAddressDto);
+    }
+
+    @Put(':id/profile')
+    async updateProfile(@Param('id') userId: string, @Body() updateProfileDto: UpdateProfileDto): Promise<User> {
+        return await this.userService.updateProfile(userId, updateProfileDto);
     }
 }

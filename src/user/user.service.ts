@@ -11,6 +11,7 @@ import { LoginUserDto } from "./dto/login-user.dto";
 import * as bcrypt from 'bcrypt';
 import { MailService } from "./mail/mail";
 import { AddAddressDto } from "./dto/add-address.dto";
+import { UpdateProfileDto } from "./dto/update-profile.dto";
 
 @Injectable()
 export class UserService {
@@ -70,6 +71,10 @@ export class UserService {
             email: user.email,
             accessToken: await this.authService.createAccessToken(user._id),
         };
+    }
+
+    async updateProfile(userId: string, updateProfileDto: UpdateProfileDto): Promise<User> {
+        return await this.userModel.findByIdAndUpdate(userId, updateProfileDto, { new: true });
     }
 
     async addAddress(userId: string, addAddressDto: AddAddressDto): Promise<User> {
