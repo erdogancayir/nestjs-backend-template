@@ -1,17 +1,16 @@
 import * as mongoose from 'mongoose';
 
 const BranchSchema = new mongoose.Schema({
-    ad: String, // Şubenin adı
-    adres: {
-        il: String,
-        ilce: String,
-        acikAdres: String
+    name: String,
+    address: {
+        city: String,
+        district: String,
+        openAddress: String
     },
-    lokasyon: {
+    location: {
         lat: Number,
         lon: Number
     }
-    // Şube için ek alanlar eklenebilir
 });
 
 export { BranchSchema };

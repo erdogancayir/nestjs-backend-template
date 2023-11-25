@@ -1,17 +1,17 @@
 import { Document } from 'mongoose';
 
 export interface Restoran extends Document {
-    ad: string;
-    aciklama: string;
-    logo: string;
-    adres: {
-        il: string;
-        ilce: string;
-        acikAdres: string;
+    name: string;
+    description: string;
+    logo?: string;
+    address: {
+        city: string;
+        district: string;
+        openAddress: string;
     };
-    lokasyon: {
+    location: {
         lat: number;
         lon: number;
     };
-    // Diğer alanlar...
+    // Other fields...
 }

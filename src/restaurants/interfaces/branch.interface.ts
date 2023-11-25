@@ -1,13 +1,13 @@
 import { Document } from 'mongoose';
 
 export interface Branch extends Document {
-    ad: string;
-    adres: {
-        il: string;
-        ilce: string;
-        acikAdres: string;
+    name: string;
+    address: {
+        city: string;
+        district: string;
+        openAddress: string;
     };
-    lokasyon: {
+    location: {
         lat: number;
         lon: number;
     };
