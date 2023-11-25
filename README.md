@@ -71,6 +71,25 @@ reviews Module
       Problem 6: Listing restaurants with pagination and sorting by average score.
 <hr/>
 
+## NestJs - 3 - What to do
+      While our project currently has basic functionality, the following features and improvements are planned for future releases:
+
+    Test Automation: Extensive unit and integration testing will be added to make the application more stable and reliable. Testing of API endpoints will be performed using tools such as Jest and Supertest.
+
+    CI/CD Integration: Tools such as GitHub Actions or Travis CI will be integrated for continuous integration and continuous deployment (CI/CD) processes. This will enable code changes to be automatically tested and quickly put into production.
+
+    Front End Development: It is planned to add a web or mobile interface to the project. A user-friendly interface can be developed using modern JavaScript libraries such as React, Angular or Vue.js.
+
+    Advanced User Management: User management features will be expanded and user roles and authorizations will be managed in more detail.
+
+    Performance Optimization: Database queries and API responses will be optimized to increase the performance of the application.
+
+    Security Enhancements: Additional protection mechanisms against security threats such as XSS, CSRF and SQL Injection will be implemented.
+
+    Expansion of Documentation: More detailed technical documentation and development guides will be prepared for developers who will contribute to the project.
+    
+    Improvements Based on User Feedback: The user experience and functionality of the application will be improved based on feedback from users and other stakeholders.
+<hr/>
 ## Skills
 
 - Rigor
