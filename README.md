@@ -64,7 +64,7 @@ reviews Module
 
 
 ## Python - 1 - Solved Problems
-     Problem 2: Restaurant query by coordinates.
+      Problem 2: Restaurant query by coordinates.
       Problem 3: Adding new items to the menu.
       Problem 4: User ranking based on restaurant reviews.
       Problem 5: Querying restaurants by category and score.
