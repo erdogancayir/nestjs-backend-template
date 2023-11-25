@@ -1,7 +1,9 @@
-<h1 align="center">Python for Data Science Piscine</h1>
+<h1 align="center">NestJs Backend Clean Template</h1>
 
 <p align="center">
-  A series of projects, part of the École 42 curriculum, designed to deepen the understanding of Python and its application in data science. This project is particularly suitable for common core graduate students.
+  General Information
+
+This project is a restaurant application where users can order from restaurants and give reviews and ratings. After logging into the system, users can review and order from various restaurants.
 </p>
 <p align="center">
   A series of projects to deepen your understanding of Python and its application in data science.
@@ -19,12 +21,56 @@
 
 <hr/>
 
+## Python - 0 - Features
+    User registration and login procedures
+    Adding multiple address information
+    View restaurant information
+    Browse menu items
+    Order placement
+    Commenting and rating restaurants
+<hr/>
 
+## Python - 0 - Database Design
+    The database was designed on MongoDB and contains the following main components:
 
+    Users: Name, password, email, age, gender and profile picture.
+    Restaurants: Name, description, logo, address and location information. Support for multiple branches.
+    Menus: Menu items for the restaurant with price, content and cover image.
+    Orders: User, restaurant, address, date and time.
+    Reviews: User reviews and restaurant ratings.
+<hr/>
 
+## Python - 0 - Modules and Functions
+  Auth Module
 
+    User authentication and authorization processes.
+    JWT based authentication strategy.
 
+User Module
 
+    User registration, profile update and address addition.
+    View user information.
+
+restaurants Module
+
+    CRUD operations of restaurants and their branches.
+    Listing and updating restaurant information.
+
+menus Module
+
+    Management of restaurant menu items.
+    Add, update and delete menu items.
+
+orders Module
+
+    User order processing.
+    Creating orders and viewing user orders.
+
+reviews Module
+
+    Commenting and rating restaurants.
+    Managing reviews and ratings.
+<hr/>
 
 
 
