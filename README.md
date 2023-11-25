@@ -11,16 +11,6 @@ This project is a restaurant application where users can order from restaurants 
 
 <hr/>
 
-## Table of Contents
-
-1. [Python - 0 - Starting](#python-0-starting)
-2. [Python - 1 - Array](#python-1-array)
-3. [Python - 2 - DataTable](#python-2-datatable)
-4. [Python - 3 - OOP](#python-3-oop)
-5. [Python - 4 - Dod](#python-4-dod)
-
-<hr/>
-
 ## Python - 0 - Features
     User registration and login procedures
     Adding multiple address information
@@ -30,7 +20,7 @@ This project is a restaurant application where users can order from restaurants 
     Commenting and rating restaurants
 <hr/>
 
-## Python - 0 - Database Design
+## Python - 1 - Database Design
     The database was designed on MongoDB and contains the following main components:
 
     Users: Name, password, email, age, gender and profile picture.
@@ -40,7 +30,7 @@ This project is a restaurant application where users can order from restaurants 
     Reviews: User reviews and restaurant ratings.
 <hr/>
 
-## Python - 0 - Modules and Functions
+## Python - 2 - Modules and Functions
   Auth Module
 
     User authentication and authorization processes.
@@ -73,10 +63,17 @@ reviews Module
 <hr/>
 
 
+## Skills
 
+- Rigor
+- Object-oriented programming
+- Web
 
+## Author
 
+<a href="https://github.com/erdogancayir">Erdogan CAYIR</a>
 
+<hr/>
 
 
 
