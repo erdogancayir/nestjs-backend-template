@@ -71,7 +71,7 @@ reviews Module
       Problem 6: Listing restaurants with pagination and sorting by average score.
 <hr/>
 
-## NestJs - 3 - What to do
+### What to do
       While our project currently has basic functionality, the following features and improvements are planned for future releases:
 
     Test Automation: Extensive unit and integration testing will be added to make the application more stable and reliable. Testing of API endpoints will be performed using tools such as Jest and Supertest.
