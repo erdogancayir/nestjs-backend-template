@@ -63,6 +63,14 @@ reviews Module
 <hr/>
 
 
+## Python - 1 - Solved Problems
+     Problem 2: Restaurant query by coordinates.
+      Problem 3: Adding new items to the menu.
+      Problem 4: User ranking based on restaurant reviews.
+      Problem 5: Querying restaurants by category and score.
+      Problem 6: Listing restaurants with pagination and sorting by average score.
+<hr/>
+
 ## Skills
 
 - Rigor
