@@ -1,3 +1,40 @@
+<h1 align="center">Python for Data Science Piscine</h1>
+
+<p align="center">
+  A series of projects, part of the École 42 curriculum, designed to deepen the understanding of Python and its application in data science. This project is particularly suitable for common core graduate students.
+</p>
+<p align="center">
+  A series of projects to deepen your understanding of Python and its application in data science.
+</p>
+
+<hr/>
+
+## Table of Contents
+
+1. [Python - 0 - Starting](#python-0-starting)
+2. [Python - 1 - Array](#python-1-array)
+3. [Python - 2 - DataTable](#python-2-datatable)
+4. [Python - 3 - OOP](#python-3-oop)
+5. [Python - 4 - Dod](#python-4-dod)
+
+<hr/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
