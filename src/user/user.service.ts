@@ -77,6 +77,14 @@ export class UserService {
         return await this.userModel.findByIdAndUpdate(userId, updateProfileDto, { new: true });
     }
 
+    async findUsersByComments() {
+        // Yorum sorgusu kodu burada
+    }
+
+    async findMaleUsersByComments(limit = 20): Promise<User[]> {
+        return await this.userModel.find({ 'gender': 'male' }).sort({ 'createdAt': -1 }).limit(limit);
+    }
+
     async addAddress(userId: string, addAddressDto: AddAddressDto): Promise<User> {
         const user = await this.userModel.findById(userId);
         if (!user) {
@@ -175,5 +183,8 @@ export class UserService {
             throw new BadRequestException('Email most be unique.');
         }
     }
-    
+
+    findAll(): any {
+        return {hello: 'world bro!'};
+      }
 }

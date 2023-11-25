@@ -19,7 +19,6 @@ export class AuthService {
   }
 
   async createAccessToken(userId: string) {
-    // const accessToken = this.jwtService.sign({userId});
     const accessToken = sign({userId}, process.env.JWT_SECRET , { expiresIn: process.env.JWT_EXPIRATION });
     return this.encryptText(accessToken);
   }

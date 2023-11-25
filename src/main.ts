@@ -5,10 +5,10 @@ import { DocumentBuilder, SwaggerModule } from "@nestjs/swagger";
 import { warn } from "console";
 import { UserModule } from "./user/user.module";
 
-//  ┓┏       ┏┓             ┏┓    
-//  ┃┃┏┓┏┏┓  ┃   ┏┓  ┏  ┏┓  ┣┫┏┓┏┓
-//  ┗┛┗┛┗┗┛  ┗┛  ┗┻  ┛  ┗   ┛┗┣┛┣┛
-//                            ┛ ┛ 
+//     ┓┏       ┏┓             ┏┓        //
+//*    ┃┃┏┓┏┏┓  ┃   ┏┓  ┏  ┏┓  ┣┫┏┓┏┓    *//
+//*    ┗┛┗┛┗┗┛  ┗┛  ┗┻  ┛  ┗   ┛┗┣┛┣┛    *//
+//                               ┛ ┛     //
 
 async function bootsrap() {
   const app = await NestFactory.create(AppModule, { logger: ['error', 'warn', 'log', 'debug', 'verbose'] });

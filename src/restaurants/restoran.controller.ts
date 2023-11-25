@@ -1,4 +1,4 @@
-import { Body, Controller, Delete, Get, Param, Post, Put } from "@nestjs/common";
+import { Body, Controller, Delete, Get, Param, Post, Put, Query } from "@nestjs/common";
 import { RestoranService } from "./restoran.service";
 import { Restoran } from "./interfaces/restoran.interface";
 import { CreateRestoranDto } from "./dto/create-restoran.dto";
@@ -25,5 +25,21 @@ export class RestoranController {
     @Delete(':id')
     async removeRestaurant(@Param('id') id: string): Promise<any> {
         return await this.restoranService.delete(id);
+    }
+
+    /**
+     * GET isteği ile belirtilen koordinatlara en yakın restoranları döndürür.
+     * @param lat - Enlem koordinatı.
+     * @param lng - Boylam koordinatı.
+     * @param maxDistance - Maksimum mesafe (metre cinsinden).
+     * @returns Yakındaki restoranların listesi.
+     */
+    @Get('/nearby')
+    async getNearbyRestaurants(
+        @Query('lat') lat: number,
+        @Query('lng') lng: number,
+        @Query('maxDistance') maxDistance = 5000
+    ): Promise<Restoran[]> {
+        return await this.restoranService.findNearby(lat, lng, maxDistance);
     }
 }

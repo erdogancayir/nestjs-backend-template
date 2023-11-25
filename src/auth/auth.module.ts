@@ -8,13 +8,16 @@ import { JwtStrategy } from './strategies/jwt.strategy';
 
 @Module({
     imports: [
+         // User modeli için Mongoose şemasını tanımlar.
         MongooseModule.forFeature([
             {name: 'User', schema: UserSchema}
         ]),
+        // Passport modülünü uygulamaya dahil eder.
         PassportModule,
+        // JWT modülünü yapılandırır. Gizli anahtar ve diğer seçenekleri tanımlar.
         JwtModule.register({
-            secret: process.env.JWT_SECRET,
-            signOptions: { expiresIn: process.env.JWT_EXPIRATION },
+            secret: process.env.JWT_SECRET,  // JWT'ler için kullanılacak gizli anahtar.
+            signOptions: { expiresIn: process.env.JWT_EXPIRATION }, // Token'ların geçerlilik süresi.
         }),
     ],
     providers: [AuthService, JwtStrategy],
