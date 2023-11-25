@@ -11,7 +11,7 @@ This project is a restaurant application where users can order from restaurants 
 
 <hr/>
 
-## Python - 0 - Features
+## NestJs - 0 - Features
     User registration and login procedures
     Adding multiple address information
     View restaurant information
@@ -20,7 +20,7 @@ This project is a restaurant application where users can order from restaurants 
     Commenting and rating restaurants
 <hr/>
 
-## Python - 1 - Database Design
+## NestJs - 1 - Database Design
     The database was designed on MongoDB and contains the following main components:
 
     Users: Name, password, email, age, gender and profile picture.
@@ -30,7 +30,7 @@ This project is a restaurant application where users can order from restaurants 
     Reviews: User reviews and restaurant ratings.
 <hr/>
 
-## Python - 2 - Modules and Functions
+## NestJs - 2 - Modules and Functions
   Auth Module
 
     User authentication and authorization processes.
@@ -63,7 +63,7 @@ reviews Module
 <hr/>
 
 
-## Python - 1 - Solved Problems
+## NestJs - 3 - Solved Problems
       Problem 2: Restaurant query by coordinates.
       Problem 3: Adding new items to the menu.
       Problem 4: User ranking based on restaurant reviews.
