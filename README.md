@@ -1,9 +1,5 @@
 <h1 align="center">NestJs Backend Clean Template</h1>
 
-
-![1_evqzQC3nI6KvsSFd65Lu9w-removebg-preview](https://github.com/erdogancayir/nestjs-backend-template/assets/94300378/14f9c663-3400-4ab0-8e79-757e426946d2)
-
-
 <p align="center">
   General Information
 
@@ -80,6 +76,8 @@ reviews Module
 <hr/>
 
 
+
+![1_evqzQC3nI6KvsSFd65Lu9w-removebg-preview](https://github.com/erdogancayir/nestjs-backend-template/assets/94300378/14f9c663-3400-4ab0-8e79-757e426946d2)
 
 
 <p align="center">
