@@ -5,9 +5,7 @@
 
 This project is a restaurant application where users can order from restaurants and give reviews and ratings. After logging into the system, users can review and order from various restaurants.
 </p>
-<p align="center">
-  A series of projects to deepen your understanding of Python and its application in data science.
-</p>
+
 
 <hr/>
 
